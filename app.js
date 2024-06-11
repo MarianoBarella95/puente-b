@@ -1,6 +1,7 @@
 const btnToggle = document.querySelector('.toggle-btn');
 const mobileMenu = document.querySelector('.nav-menu');
 const bodyElement = document.querySelector('body');
+const navLink = document.querySelectorAll('.menu-link');
 
 /* ANIMACIÓN TOGGLE MENU */
 
@@ -13,11 +14,20 @@ function showMenu () {
     } else {
         mobileMenu.classList.remove('active-menu');
         btnToggle.innerHTML = '<i class="fa-solid fa-bars" style="color: #000000;"></i>';
-        bodyElement.style.overflow = 'visible';
+        bodyElement.style.overflow = '';
     }
 }
 
 btnToggle.addEventListener('click', showMenu);
+
+navLink.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active-menu');
+        btnToggle.innerHTML = '<i class="fa-solid fa-bars" style="color: #000000;"></i>';
+        bodyElement.style.overflow = '';  
+    });
+});
+
 
 // TYPEWRITER
 
