@@ -122,18 +122,25 @@ section {
     align-items: center;
     gap: 2rem;
     perspective: 1000px; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
     width: 100%;
 }
 
 .card {
-    flex: 0 0 calc(50% - 1rem); /* Esto hace que cada tarjeta ocupe el 50% del ancho del contenedor menos el espacio entre ellas */
+    /* flex: 0 0 calc(50% - 1rem);  */
+    width: 15rem;
     margin-bottom: 2rem;
     background-color: white;
     border: 3px solid var(--primary-color);
-    height: 18rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,11 +209,15 @@ section {
 }
 
 .card-p {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
 }
 
 .card-img {
-    width: 3rem;
+    width: clamp(2rem, 3vw, 2.5rem);
+}
+
+.fa-arrow-rigth {
+    font-size: 6rem;
 }
 
 /* INBOUND SECTION */
@@ -326,11 +337,10 @@ footer {
     max-width: 1024px;
     margin-inline: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-
 }
 
 footer > div {
@@ -339,6 +349,7 @@ footer > div {
     align-items: center;
     gap: 1rem;
     flex: 1 1 300px;
+    flex: 0 1;
 }
 
 .favicon-title {
