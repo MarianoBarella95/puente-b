@@ -54,17 +54,26 @@
         margin-bottom: 2rem;
     }
 
-    .section-inbound {
-        width: 100%;
-    }
-
-    .img-inbound {
-        width: 100%;
-    }
-
     .card {
         width: 90%;
         height: 15rem;
     }
+    .section-inbound {
+        width: 100%;
+    }
+    
+    .img-inbound {
+        width: 100%;
+    }
+
+    .img-contact {
+        width: 100%;
+    }
+
+    .section-contact {
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
 }
 
