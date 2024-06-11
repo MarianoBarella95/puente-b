@@ -181,7 +181,7 @@ section {
 
 
 .inbound-title {
-    font-size: clamp(2rem, 5%, 4rem);
+    font-size: clamp(3rem, 5%, 5rem);
     font-weight: 900;
 }
 
