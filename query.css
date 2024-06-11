@@ -1,0 +1,58 @@
+@media (width < 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+        background-color: transparent;
+        border: none;
+    }
+
+    .fa-bars, .fa-xmark {
+        font-size: 2rem;
+        animation: rotate ease;
+    }
+
+    .active-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #161616;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        z-index: 1;
+        height: 30rem;
+        width: 70%;
+    }
+
+    .active-menu li {
+        border-bottom: #F3E600 1px solid;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-link {
+        color: #F3E600;
+        font-size: 2rem;
+    }
+
+    .section {
+        margin-bottom: 2rem;
+    }
+
+    .section-inbound {
+        width: 100%;
+    }
+
+    .img-inbound {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
