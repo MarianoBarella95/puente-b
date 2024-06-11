@@ -116,15 +116,34 @@ section {
 }
 
 .cards-container {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    perspective: 1000px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .card {
+    flex: 0 0 calc(50% - 1rem); /* Esto hace que cada tarjeta ocupe el 50% del ancho del contenedor menos el espacio entre ellas */
+    margin-bottom: 2rem;
     background-color: white;
+    border: 3px solid var(--primary-color);
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 15px 15px var(--primary-color);
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    position: relative;
+    /* background-color: white;
     border: 3px solid var(--primary-color);
     height: 18rem;
     width: 20rem;
@@ -136,12 +155,38 @@ section {
     border-radius: 1rem;
     text-align: center;
     box-shadow: 15px 15px var(--primary-color);
+    transform-style: preserve-3d;
+    transition: transform 0.6s; */
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-back {
+    transform: rotateY(180deg);
 }
 
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
     transition: all 1s;
 }
 
