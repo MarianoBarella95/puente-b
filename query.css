@@ -24,8 +24,19 @@
         top: 5rem;
         right: 0;
         z-index: 1;
-        height: 30rem;
-        width: 70%;
+        height: 100%;
+        width: 100%;
+        animation: menuTranslate ease-in-out 1s;
+    }
+
+    @keyframes menuTranslate {
+        from {
+            filter: blur(10px);
+            transform: translateX(100%);
+        } to {
+            filter: blur(0);
+            transform: translateX(0);
+        }
     }
 
     .active-menu li {
@@ -52,7 +63,8 @@
     }
 
     .card {
-        width: 100%;
+        width: 90%;
+        height: 15rem;
     }
 }
 

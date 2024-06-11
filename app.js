@@ -1,5 +1,6 @@
 const btnToggle = document.querySelector('.toggle-btn');
 const mobileMenu = document.querySelector('.nav-menu');
+const bodyElement = document.querySelector('body');
 
 /* ANIMACIÓN TOGGLE MENU */
 
@@ -7,10 +8,12 @@ function showMenu () {
     if (!mobileMenu.classList.contains('active-menu')) {
         mobileMenu.classList.add('active-menu');
         btnToggle.innerHTML = '<i class="fa-solid fa-xmark" style="color: #000000;"></i>';
+        bodyElement.style.overflow = 'hidden';
 
     } else {
         mobileMenu.classList.remove('active-menu');
-        btnToggle.innerHTML = '<i class="fa-solid fa-bars" style="color: #000000;"></i>'
+        btnToggle.innerHTML = '<i class="fa-solid fa-bars" style="color: #000000;"></i>';
+        bodyElement.style.overflow = 'visible';
     }
 }
 
@@ -51,3 +54,4 @@ const observer = new IntersectionObserver ((entries) => {
 })
 
 hiddenElements.forEach((el) => observer.observe(el));
+
