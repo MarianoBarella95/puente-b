@@ -103,10 +103,16 @@ section {
     gap: 3rem;
 }
 
+
+#app {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
 .main-title {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: clamp(2rem, 5vw, 5rem);
     text-align: center;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .cards-container {
@@ -181,8 +187,8 @@ section {
 
 
 .inbound-title {
-    font-size: clamp(3rem, 5%, 5rem);
-    font-weight: 900;
+    font-size: clamp(2rem, 5%, 5rem);
+    font-weight: 800;
 }
 
 .inbound-p {
