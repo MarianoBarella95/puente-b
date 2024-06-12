@@ -54,8 +54,12 @@
         margin-bottom: 2rem;
     }
 
+    .cards-container {
+        width: 100%;
+    }
+
     .card {
-        width: 90%;
+        width: 80%;
         height: 10rem;
     }
     .section-inbound {
@@ -73,6 +77,15 @@
     .section-contact {
         width: 100%;
         flex-direction: row-reverse;
+        border-radius: 0;
+    }
+
+    .contact-content {
+        padding-top: 1rem;
+    }
+
+    .content-footer {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
