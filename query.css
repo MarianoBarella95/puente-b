@@ -1,4 +1,9 @@
 @media (width < 768px) {
+    
+    .nav-bar {
+        grid-template-columns: 80% 1fr;
+    }
+    
     .nav-menu {
         display: none;
     }
