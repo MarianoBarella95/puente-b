@@ -31,14 +31,14 @@ navLink.forEach(link => {
 
 // TYPEWRITER
 
-var app = document.getElementById('app');
+// var app = document.getElementById('app');
 
-new Typewriter('#app', {
-    strings: ['IMPULSAMOS TU MARCA', 'HACEMOS LA COMUNICACIÓN DIGITAL'],
-    autoStart: true,
-    deleteSpeed: 2,
-    loop: true,
-});
+// new Typewriter('#app', {
+//     strings: ['IMPULSAMOS TU MARCA', 'HACEMOS LA COMUNICACIÓN DIGITAL'],
+//     autoStart: true,
+//     deleteSpeed: 2,
+//     loop: true,
+// });
 
 // PLYR
 
@@ -50,18 +50,18 @@ const player = new Plyr('#player', {
 
 // SCROLL CARDS
 
-const hiddenElements = document.querySelectorAll('.hidden');
+// const hiddenElements = document.querySelectorAll('.hidden');
 
-const observer = new IntersectionObserver ((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('show');
+// const observer = new IntersectionObserver ((entries) => {
+//     entries.forEach((entry) => {
+//         if(entry.isIntersecting) {
+//             entry.target.classList.add('show');
             
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-})
+//         } else {
+//             entry.target.classList.remove('show');
+//         }
+//     });
+// })
 
 hiddenElements.forEach((el) => observer.observe(el));
 

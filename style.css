@@ -150,6 +150,8 @@ section {
     border: 3px solid var(--primary-color);
     height: 15rem;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
@@ -174,31 +176,6 @@ section {
     transition: transform 0.6s; */
 }
 
-.card:hover {
-    transform: rotateY(180deg);
-}
-
-
-.card-front, .card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-back {
-    transform: rotateY(180deg);
-}
-
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -219,6 +196,7 @@ section {
 
 .card-p {
     font-size: clamp(.75rem, 3vw, 1.25rem);
+    display: none;
 }
 
 .card-img {
