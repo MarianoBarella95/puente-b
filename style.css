@@ -26,35 +26,31 @@ body {
 
 header {
     width: 100%;
-    height: 5rem;
+    height: 8rem;
     border-bottom: solid 3px black;
 }
 
-.main-logo-container {
-    width: 100%;
-    height: 100%;
-    background-image: url(img/logo_negro-puenteb.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1rem;
-}
-
-/* .img-header {
-    height: 5rem;
-    width: 100%;
-    width: 600px;
-    object-fit: cover;
-} */
 
 .nav-bar {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: start;
+    justify-content: start; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1024px;
     margin-inline: auto;
     height: 100%;
+}
+
+.img-logo-container {
+    width: 100%;
+    height: 8rem;
+    background-image: url(img/360_logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-content {
@@ -78,7 +74,7 @@ header {
 .menu-link {
     text-transform: uppercase;
     color: var(--primary-color);
-    font-size: clamp(1rem, 1.5vw, 4rem);
+    font-size: clamp(1rem, 1.25vw, 4rem);
     font-weight: 500;
 }
 
@@ -386,7 +382,7 @@ footer > div {
 } */
 
 .footer-img-container {
-    background-image: url(img/logo_amarillo-puenteb.png);
+    background-image: url(img/500_logo_amarillo.png);
     width: 20rem;
     height: 5rem;
     background-position: center;
