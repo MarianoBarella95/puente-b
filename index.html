@@ -13,15 +13,15 @@
 <body>
     <header>
         <div class="nav-bar">
-            <div class="img-logo-container">
+            <a href="#" class="img-logo-container">
                 <!-- bg-image en css -->
                 <!-- <img class="img-header" src="img/360_logo.png" alt=""> -->
-            </div>
+            </a>
             <div class="nav-content">
                 <ul class="nav-menu">
-                    <li><a href="#nosotros" class="menu-link">NOSOTROS</a></li>
-                    <li><a href="#servicio" class="menu-link">SERVICIOS</a></li>
-                    <li><a href="#contacto" class="menu-link">CONTACTO</a></li>
+                    <li><a href="#nosotros" class="menu-link hvr-sweep-to-bottom">NOSOTROS</a></li>
+                    <li><a href="#servicio" class="menu-link hvr-sweep-to-bottom">SERVICIOS</a></li>
+                    <li><a href="#contacto" class="menu-link hvr-sweep-to-bottom">CONTACTO</a></li>
                 </ul>
                 <button class="toggle-btn"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
             </div>
@@ -40,43 +40,54 @@
             </div>
             <div class="cards-container">
                 <div class="card">
-                    <h3 class="card-title">20%</h3>
-                    <p class="card-p">De nuestros clientes están satisfechos con nuestro trabajo.</p>
+                    <h3 class="card-title" id="card1">25.000</h3>
+                    <p class="card-p">Miembros activos de nuestra comunidad.</p>
                     <img class="card-img" src="img/rocket-img.svg" alt="">
                 </div>
                 <div class="card">
-                    <h3 class="card-title">20%</h3>
-                    <p class="card-p">De nuestros clientes están satisfechos con nuestro trabajo.</p>
+                    <h3 class="card-title">33.000</h3>
+                    <p class="card-p">Consultas gestionadas en 2023.</p>
                     <img class="card-img" src="img/heart-img.svg" alt="">
                 </div>
                 <div class="card">
-                    <h3 class="card-title">20%</h3>
-                    <p class="card-p">De nuestros clientes están satisfechos con nuestro trabajo.</p>
+                    <h3 class="card-title">35%</h3>
+                    <p class="card-p">de crecimiento de comunidad en el último año.</p>
                     <img class="card-img" src="img/people-img.svg" alt="">
                 </div>
                 <div class="card">
-                    <h3 class="card-title">20%</h3>
-                    <p class="card-p">De nuestros clientes están satisfechos con nuestro trabajo.</p>
+                    <h3 class="card-title">6500</h3>
+                    <p class="card-p">Ventas anuales.</p>
                     <img class="card-img" src="img/check-img.svg" alt="">
                 </div>
             </div>
         </section>
         <section class="section-inbound section">
-            <!-- <img class="img-inbound" src="img/inbound-illustration.svg" alt=""> -->
-            <div class="inbound-content">
-                <h3 class="inbound-title">INBOUND MARKETING</h3>
-                <p class="inbound-p">Nos adaptamos a las necesidades de tu público objetivo para atraer clientes fieles a tu empresa.
-                    Creamos experiencias a la medida a través de contenido de valor que ayuda a generar interacción y
-                    crecimiento.
-                </p>
+            <h2 class="title-inbound">DICEN QUE ESTO HACEMOS BIEN</h2>
+            <div class="servicios-container">
+                <div class="servicios-1">
+                    <button class="btn-servicios-toggle-1">Creatividad y Contenidos<i class="fa-solid fa-chevron-down" style="color: #f3e600;"></i></button>
+                    <ul class="list-servicios-1">
+                        <li class="servicios-item">Branding y desarrollo de identidad digital de la marca.</li>
+                        <li class="servicios-item">Consultoría de marca.</li>
+                        <li class="servicios-item">Estrategia y planificación de contenidos.</li>
+                        <li class="servicios-item">Social Media Management.</li>
+                    </ul>
+                </div>
+                <div class="servicios-2">
+                    <button class="btn-servicios-toggle-2">Desarrollo y Performance<i class="fa-solid fa-chevron-down" style="color: #f3e600;"></i></button>
+                    <ul class="list-servicios-2">
+                        <li class="servicios-item">Creación y moderación de comunidadades.</li>
+                        <li class="servicios-item">Growth Marketing.</li>
+                        <li class="servicios-item">CRM y automatización.</li>
+                        <li class="servicios-item">Estrategia de performance.</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="section-contact section" id="contacto">
             <div class="contact-content">
                 <h3 class="contact-title">Estamos a un Click de Distancia</h3>
-                <p class="contact-p">Valoramos cada idea y proyecto. No dudes en enviarnos tus consultas o propuestas; 
-                    estamos a un mensaje de distancia para ayudarte a llevar tu marca al siguiente nivel.
-                </p>
+                <p class="contact-p">Contactanos para llevar tu marca al siguiente nivel.</p>
                 <div class="contact-links-container">
                     <a href="https://www.instagram.com/puentebcm/?hl=es-la" class="social-link"><i class="fa-brands fa-instagram" style="color: #161616;"></i></a>
                     <a href="mailto:comercial@puenteb.com.ar" class="social-link"><i class="fa-regular fa-envelope" style="color: #161616;"></i></a>
@@ -107,6 +118,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js" integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
     <script src="app.js"></script>
 </body>
