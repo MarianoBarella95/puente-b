@@ -231,6 +231,10 @@ section {
     width: clamp(2rem, 3vw, 2.5rem);
 }
 
+#countup3::after {
+    content: '%';
+}
+
 .fa-solid {
     font-size: 1.5rem;
     background-color: var(--bg-color);
@@ -265,7 +269,7 @@ section {
     flex-wrap: wrap;
     gap: 2rem;
     min-height: 10rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .servicios-1, .servicios-2 {
@@ -276,7 +280,7 @@ section {
     flex: 1 1 400px;
     min-height: 2rem;
     gap: 1rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .btn-servicios-toggle-1, .btn-servicios-toggle-2 {
@@ -306,16 +310,16 @@ section {
 }
 
 .show-servicios {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     list-style-type: circle;
     animation: appearList .5s ease-in-out;
-    text-align: center;
     height: 12rem;
+    gap: 1rem;
 }
 
 @keyframes appearList {
@@ -329,8 +333,10 @@ section {
 }
 
 .servicios-item {
-    font-size: clamp(1.5rem, 1vw, 2rem);
+    font-size: clamp(1.25rem, 1vw, 2rem);
     font-weight: 500;
+    padding-left: 1rem;
+    height: 100%;
 }
 
 .fa-chevron-down {

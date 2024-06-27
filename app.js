@@ -59,33 +59,43 @@ toggleServicios2.addEventListener('click', showServicios2);
 
 // countUp
 
+// Definir el CountUp fuera del evento scroll
+let countUp1 = new CountUp('countup1', 0, 25000, 0, 3);
 
-// TYPEWRITER
+window.addEventListener('scroll', () => {
+    // Comprobar si el contador no ha iniciado
+    if (!countUp1.error && !countUp1.started) {
+        countUp1.start();
+    }
+});
 
-// var app = document.getElementById('app');
+let countUp2 = new CountUp('countup2', 0, 33000, 0, 3);
 
-// new Typewriter('#app', {
-//     strings: ['IMPULSAMOS TU MARCA', 'HACEMOS LA COMUNICACIÓN DIGITAL'],
-//     autoStart: true,
-//     deleteSpeed: 2,
-//     loop: true,
-// });
+window.addEventListener('scroll', () => {
+    // Comprobar si el contador no ha iniciado
+    if (!countUp2.error && !countUp2.started) {
+        countUp2.start();
+    }
+});
+
+let countUp3 = new CountUp('countup3', 0, 35, 0, 5);
+
+window.addEventListener('scroll', () => {
+    // Comprobar si el contador no ha iniciado
+    if (!countUp3.error && !countUp3.started) {
+        countUp3.start();
+    }
+});
 
 
-// SCROLL CARDS
+let countUp4 = new CountUp('countup4', 0, 6500, 0, 3);
 
-// const hiddenElements = document.querySelectorAll('.hidden');
+window.addEventListener('scroll', () => {
+    // Comprobar si el contador no ha iniciado
+    if (!countUp4.error && !countUp4.started) {
+        countUp4.start();
+    }
+});
 
-// const observer = new IntersectionObserver ((entries) => {
-//     entries.forEach((entry) => {
-//         if(entry.isIntersecting) {
-//             entry.target.classList.add('show');
-            
-//         } else {
-//             entry.target.classList.remove('show');
-//         }
-//     });
-// })
 
-hiddenElements.forEach((el) => observer.observe(el));
 
