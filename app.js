@@ -32,8 +32,8 @@ navLink.forEach(link => {
 
 const player = new Plyr('#player', {
     autoplay: true,
-    muted: false,
-    resetOnEnd: true,
+    muted: true,
+    controls: ['play', 'mute', 'volume', 'play-large']
 });
 
 
