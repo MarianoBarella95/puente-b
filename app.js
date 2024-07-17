@@ -45,7 +45,7 @@ const listServicios1 = document.querySelector('.list-servicios-1');
 const listServicios2 = document.querySelector('.list-servicios-2');
 
 function showServicios1 () {
-    listServicios1.classList.toggle('show-servicios');    
+    listServicios1.classList.toggle('show-servicios');
 }
 
 function showServicios2 () {
@@ -53,8 +53,8 @@ function showServicios2 () {
 }
 
 
-toggleServicios1.addEventListener('click', showServicios1);
-toggleServicios2.addEventListener('click', showServicios2);
+toggleServicios1.addEventListener('mouseover', showServicios1);
+toggleServicios2.addEventListener('mouseover', showServicios2);
 
 
 // countUp
@@ -98,4 +98,33 @@ window.addEventListener('scroll', () => {
 });
 
 
+// NAV MENU ANIMATION 
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtener todos los enlaces del menú
+    const menuLinks = document.querySelectorAll(".menu-link");
+
+    // Manejador de evento para actualizar el enlace activo al hacer scroll
+    window.addEventListener("scroll", function() {
+        // Obtener la posición actual del scroll
+        let fromTop = window.scrollY;
+
+        // Recorrer todos los enlaces del menú
+        menuLinks.forEach(function(menuLink) {
+            // Obtener el ID de la sección a la que apunta el enlace
+            let section = document.querySelector(menuLink.hash);
+
+            // Verificar si la sección está visible en la ventana
+            if (
+                section.offsetTop <= fromTop + 100 && // Ajusta el valor según tu diseño
+                section.offsetTop + section.offsetHeight > fromTop + 100
+            ) {
+                // Si la sección está visible, añadir la clase 'active' al enlace correspondiente
+                menuLink.classList.add("active-menu-link");
+            } else {
+                // Si no está visible, asegurarse de que el enlace no tenga la clase 'active'
+                menuLink.classList.remove("active-menu-link");
+            }
+        });
+    });
+});

@@ -86,6 +86,11 @@ header {
     padding: 1rem;
 }
 
+.active-menu-link {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
 
 /* Sweep To Bottom */
 
@@ -160,7 +165,6 @@ section {
 .video-main {
     width: 100%;
 }
-
 
 /* ESTILOS SECCION CARDS */
 
@@ -299,9 +303,9 @@ section {
 }
 
 .btn-servicios-toggle-1, .btn-servicios-toggle-2 {
-    border: none;
-    color: var(--bg-color);
-    background-color: var(--primary-color);
+    border: 4px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--bg-color);
     font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: 500;
     padding-inline: 1rem;
@@ -311,13 +315,14 @@ section {
     justify-content: center;
     gap: 8px;
     align-items: center;
-    width: fit-content;
+    width: 400px;
     height: 6rem;
 }
 
 .btn-servicios-toggle-1:hover, .btn-servicios-toggle-2:hover {
-
     box-shadow: 0 0 15px var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 .list-servicios-1, .list-servicios-2 {
@@ -333,8 +338,14 @@ section {
     flex-direction: column;
     list-style-type: circle;
     animation: appearList .5s ease-in-out;
-    height: 12rem;
+    height: 30rem;
     gap: 1rem;
+    margin-top: 1rem;
+}
+
+.mkt-img, .performance-img {
+    width: 280px;
+    text-align: center;
 }
 
 @keyframes appearList {
@@ -349,7 +360,7 @@ section {
 
 .servicios-item {
     font-size: clamp(1.25rem, 1vw, 2rem);
-    font-weight: 500;
+    font-weight: 600;
     padding-left: 1rem;
     height: 100%;
 }
@@ -398,6 +409,10 @@ section {
 
 .contact-p {
     font-size: clamp(1.5rem, 1%, 3rem);
+}
+
+.img-contacto {
+    width: 280px;
 }
 
 .contact-links-container {

@@ -114,4 +114,9 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    .btn-servicios-toggle-1, .btn-servicios-toggle-2 {
+        width: 300px;
+    }
+
 }
