@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Verificar si la sección está visible en la ventana
             if (
-                section.offsetTop <= fromTop + 100 && // Ajusta el valor según tu diseño
+                section.offsetTop <= fromTop + 150 && // Ajusta el valor según tu diseño
                 section.offsetTop + section.offsetHeight > fromTop + 100
             ) {
                 // Si la sección está visible, añadir la clase 'active' al enlace correspondiente
