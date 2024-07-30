@@ -39,22 +39,22 @@ const player = new Plyr('#player', {
 
 // TOGGLE SERVICIOS
 
-const toggleServicios1 = document.querySelector('.btn-servicios-toggle-1');
-const toggleServicios2 = document.querySelector('.btn-servicios-toggle-2');
-const listServicios1 = document.querySelector('.list-servicios-1');
-const listServicios2 = document.querySelector('.list-servicios-2');
+// const toggleServicios1 = document.querySelector('.btn-servicios-toggle-1');
+// const toggleServicios2 = document.querySelector('.btn-servicios-toggle-2');
+// const listServicios1 = document.querySelector('.list-servicios-1');
+// const listServicios2 = document.querySelector('.list-servicios-2');
 
-function showServicios1 () {
-    listServicios1.classList.toggle('show-servicios');
-}
+// function showServicios1 () {
+//     listServicios1.classList.toggle('show-servicios');
+// }
 
-function showServicios2 () {
-    listServicios2.classList.toggle('show-servicios');    
-}
+// function showServicios2 () {
+//     listServicios2.classList.toggle('show-servicios');    
+// }
 
 
-toggleServicios1.addEventListener('mouseover', showServicios1);
-toggleServicios2.addEventListener('mouseover', showServicios2);
+// toggleServicios1.addEventListener('mouseover', showServicios1);
+// toggleServicios2.addEventListener('mouseover', showServicios2);
 
 
 // countUp
