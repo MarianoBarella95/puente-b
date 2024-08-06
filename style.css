@@ -162,8 +162,45 @@ section {
     margin-bottom: 5rem;
 }
 
+.section-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
 .video-main {
     width: 100%;
+}
+
+.btn-manifiesto {
+    /* border: 2px solid var(--primary-color); */
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 2vw, 3rem);
+    text-transform: uppercase;
+}
+
+.btn-manifiesto:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.p-manifiesto { 
+    display: none;
+}
+
+.show-manifiesto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
 /* ESTILOS SECCION CARDS */

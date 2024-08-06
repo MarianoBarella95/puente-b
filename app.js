@@ -28,6 +28,17 @@ navLink.forEach(link => {
     });
 });
 
+// Manifiesto 
+
+const btnManifiesto = document.querySelector(".btn-manifiesto");
+const pManifiesto = document.querySelector(".p-manifiesto");
+
+function showManifiesto () {
+    pManifiesto.classList.toggle('show-manifiesto');
+}
+
+btnManifiesto.addEventListener('click', showManifiesto);
+
 // PLYR
 
 const player = new Plyr('#player', {

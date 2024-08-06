@@ -1,3 +1,9 @@
+@media (width > 1439px) {
+    .btn-servicios-toggle-1, .btn-servicios-toggle-2 {
+        padding: 4rem;
+    }
+}
+
 @media (width < 768px) {
     
     .nav-bar {
