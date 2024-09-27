@@ -305,6 +305,10 @@ section {
     content: '%';
 }
 
+#countup4::after {
+    content: '%';
+}
+
 .fa-solid {
     font-size: 1.5rem;
     background-color: var(--bg-color);

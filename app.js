@@ -99,7 +99,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-let countUp4 = new CountUp('countup4', 0, 6500, 0, 3);
+let countUp4 = new CountUp('countup4', 0, 66, 0, 3);
 
 window.addEventListener('scroll', () => {
     // Comprobar si el contador no ha iniciado
